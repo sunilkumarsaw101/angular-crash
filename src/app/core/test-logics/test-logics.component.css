@@ -1,0 +1,10 @@
+.container{
+    display: flex;
+    justify-content: space-between;
+}
+.pagination{
+    margin-left: 0;
+}
+.page-navigation{
+    margin-right: 0;
+}

@@ -1,0 +1,17 @@
+<p>practice-resover works!</p>
+<table class="table">
+  <thead>
+    <th>User Id</th>
+    <th>Id</th>
+    <th>Title</th>
+    <th>Status</th>
+  </thead>
+  <tbody>
+    <tr *ngFor="let data of todolist">
+      <td>{{ data.userId }}</td>
+      <td>{{ data.id }}</td>
+      <td>{{ data.title }}</td>
+      <td>{{ data.completed }}</td>
+    </tr>
+  </tbody>
+</table>

@@ -1,0 +1,15 @@
+.listContainer{
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: auto;
+    height: 30rem;
+}
+
+.del{
+text-decoration: underline;
+color: red;
+cursor: pointer;
+
+}

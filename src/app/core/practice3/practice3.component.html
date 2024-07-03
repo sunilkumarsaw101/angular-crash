@@ -1,0 +1,68 @@
+
+<div class="container">
+    <form [formGroup]="bookSongListForm">
+      <input type="text" name="name" id="name" formControlName="name" placeholder="name">
+      <input type="text" name="genre" id="genre" formControlName="genre" placeholder="genre">
+      <input type="text" name="creator" id="creator" formControlName="creator" placeholder="creator">
+      <input type="radio" id="book" checked formControlName="bookSong" value="book">book
+      <input type="radio"  id="song" formControlName="bookSong" value="song">song
+
+      <button (click)="submit()">Add</button>
+    </form>
+</div>
+
+<div class="listContainer">
+    <div class="bookContainer">
+
+        <h4>BookList</h4>
+        <div>
+            <table class="table table-bordered">
+                <thead>
+                    <tr >
+                        <th>name</th>
+                        <th>genre</th>
+                        <th>creator</th>
+                        <th>action</th>
+                    </tr>
+                </thead>
+
+                <tbody *ngIf="bookList.length>0" >
+                    <tr  *ngFor="let data of bookList" >
+                        <td >{{data.name}}</td>
+                        <td>{{data.genre}}</td>
+                        <td>{{data.creator}}</td>
+                        <td *ngIf="data" (click)="deleteBook(data.name)" class="del">delele</td>
+                    </tr>
+                </tbody>
+
+            </table>
+        </div>
+    </div>
+
+    <div class="songContainer">
+        <h4>SongList</h4>
+        <div>
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>name</th>
+                        <th>genre</th>
+                        <th>creator</th>
+                        <th>action</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr *ngFor="let data of songList">
+                        <td>{{data.name}}</td>
+                        <td>{{data.genre}}</td>
+                        <td>{{data.creator}}</td>
+                        <td><span>delele</span></td>
+                    </tr>
+                </tbody>
+
+            </table>
+        </div>
+    </div>
+
+</div>

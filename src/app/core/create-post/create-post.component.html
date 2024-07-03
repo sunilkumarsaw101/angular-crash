@@ -1,0 +1,200 @@
+<!-- <p>create-post works!</p> -->
+
+<!-- <div class="container">
+  <form [formGroup]="createPost" class="form m-2" (ngSubmit)="onSubmit()">
+    <div class="row">
+      <div class="col-12">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="formGroup form-horizontal row">
+              <label class="col-md-2" for="userId">User Id</label>
+              <div class="col-md-10">
+                <input type="text" id="userId" formControlName="userId" />
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="formGroup form-horizontal row">
+              <label class="col-md-2" for="id">Id</label>
+              <div class="col-md-10">
+                <input type="text" name="id" id="id" formControlName="id" />
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="formGroup form-horizontal row">
+              <label class="col-md-2" for="title">Title</label>
+              <div class="col-md-10">
+                <input type="text" id="title" formControlName="title" />
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="formGroup form-horizontal row">
+              <label class="col-md-2" for="body">Body</label>
+              <div class="col-md-10">
+                <input type="text" id="body" formControlName="body" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      id="div1"
+      *ngIf="createPost.get('radioButton').value === '1'"
+      style="color: blueviolet"
+    >
+      this is div 1
+    </div>
+    <div
+      id="div2"
+      *ngIf="createPost.get('radioButton').value === '2'"
+      style="color: brown"
+    >
+      this is div 2
+    </div>
+
+    <label for="radio1">Radio1</label>
+    <input
+      type="radio"
+      id="radio1"
+      value="1"
+      formControlName="radioButton"
+      checked
+    />
+    <label for="radio2">Radio2</label>
+    <input type="radio" id="radio2" value="2" formControlName="radioButton" />
+
+    <button type="submit">Submit</button>
+  </form>
+</div> -->
+
+<!-- <div id="div1" *ngIf="isShow=='1'" style="color: blueviolet;">this is div 1</div>
+<div id="div2" *ngIf="isShow=='2'" style="color: brown;">this is div 2</div>
+
+<label for="radio1">Radio1</label>
+<input type="radio"id="radio1" [(ngModel)]="isShow" value="1"  checked>
+<label for="radio2">Radio2</label>
+<input type="radio" [(ngModel)]="isShow" id="radio2" value="2" > -->
+
+<!-- <form [formGroup]="emailForm" (ngSubmit)="onSubmit1()">
+  <div formArrayName="emails">
+    <div *ngFor="let email of emails.controls; let i = index">
+      <input [formControl]="email" placeholder="Email {{ i + 1 }}" />
+      <button type="button" (click)="removeEmail(i)">Remove</button>
+    </div>
+  </div>
+  <button type="button" (click)="addEmail()">Add Email</button>
+  <button type="submit">submit</button>
+</form> -->
+
+<!-- <form (ngSubmit)="formSubmit()">
+  <label for="userName">User Name</label>
+  <input type="text" id="userName" [formControl]="user_name" />
+  <label for="email">Email</label>
+  <input type="text" id="email" [formControl]="emailId" />
+
+  <button type="submit">Submit</button>
+</form> -->
+
+<!-- <form [formGroup]="myForm" (ngSubmit)="submitForm()">
+  <label for="checkbox1"> Agree to the terms and conditions. </label>
+  <input type="checkbox" id="checkbox1" formControlName="checkbox1" />
+  <div *ngIf="myForm.get('checkbox1').hasError('required')">You must agree to the terms and conditions</div>
+  <div>
+
+    <button type="submit" [disabled]="!myForm.valid">submit</button>
+  </div>
+</form> -->
+
+<!-- <div id="div1">
+  <h1>this is to check media queries</h1></div> -->
+
+<!-- <div >
+  <div class="row">
+    <div class="col-md-6">
+      <h2>Column 1</h2>
+      <p>This is the content of the first column.</p>
+    </div>
+    <div class="col-md-6">
+      <h2>Column 2</h2>
+      <p>This is the content of the second column.</p>
+    </div>
+  </div>
+</div> -->
+
+<!-- check css position properties -->
+<!-- <div id="parent1"  >
+ <div id="child1 ">
+ dionbfmd
+ </div>
+</div> -->
+
+<!-- <div class="cn"><div class="inner">your </div></div> -->
+<!-- 
+<div class="container">
+  <div class="item1">Item 1</div>
+  <div class="item2">Item 2</div>
+</div> -->
+
+<!-- <div class="container">
+  <div class="item">1</div>
+  <div class="item">2</div>
+  <div class="item">3</div>
+  <div class="item">4</div>
+  <div class="item">5</div>
+  <div class="item">6</div>
+  <div class="item">7</div>
+  <div class="item">8</div>
+  <div class="item">9</div>
+</div> -->
+
+<!-- <div id="div1">
+<p id="para1">this this paragraph</p>
+</div> -->
+
+<!-- to check switchmap -->
+<!-- <button (click)="getData()">fetch data</button>
+<div *ngIf="result">
+Result: {{result | json}}
+</div> -->
+
+<!-- use of trackby with ngfor -->
+<!-- <ul>
+  <li *ngFor="let item of items; let i= index; trackBy: trackbyfun">
+  {{item.name}}
+  </li>
+</ul> -->
+
+<!-- using async pipe, no need to subscribe the observable in ts file -->
+<!-- <div>{{data | async}}</div> -->
+
+<!-- <h3>this is create post component</h3>
+
+<p [innerText]="message"></p> -->
+
+<mat-slide-toggle>Toggle me!</mat-slide-toggle>
+<!-- 
+<div>
+  <form [formGroup]="newForm" (ngSubmit)="onSubmit()">
+    <div>
+      <label for="name">Name</label>
+      <input type="text" id="name" formControlName="name" />
+    </div>
+    <div>
+      <label for="id">Id</label>
+      <input type="text" id="id" formControlName="id" />
+    </div>
+    <button type="submit">Submit</button>
+  </form>
+</div> -->
+
+
+<!-- <p>{{inputVar}}</p> -->
+
+<!-- <button (click)="sendvalue()">Sent value</button> -->

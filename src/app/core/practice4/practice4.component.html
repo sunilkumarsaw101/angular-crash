@@ -1,0 +1,24 @@
+
+
+<!-- 
+
+<div class="container">
+
+    <div class="timer">{{ formatedTime }}</div>
+  <button (click)="start()">Start</button>
+  <button (click)="stop()">Stop</button>
+  <button (click)="resume()">Resume</button>
+  <button (click)="reset()">Reset</button>
+</div> -->
+
+
+<form [formGroup]="hobbyForm" (ngSubmit)="onSubmit()">
+    <div formArrayName="hobbies">
+      <div *ngFor="let hobby of hobbies.controls; let i = index" [formGroupName]="i">
+        <input formControlName="hobby" placeholder="Enter hobby">
+        <button type="button" (click)="removeHobby(i)" *ngIf="hobbies.length > 1">Remove</button>
+      </div>
+    </div>
+    <button type="button" (click)="addHobby()">Add Hobby</button>
+    <button type="submit">Submit</button>
+  </form>
